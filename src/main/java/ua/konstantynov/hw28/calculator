@@ -1,0 +1,35 @@
+﻿#!/bin/bash
+#Please implement bash script which allows you at interactive mode perform the following mathematical operations:
+#adding
+#substruction
+#multiplication
+#dividing
+#
+#Also you have to pass at least 10 answers in hacktest.
+
+echo "Enter Two numbers : "
+read -r a
+read -r b
+
+echo "Enter Choice :"
+echo "1. Adding"
+echo "2. Subtraction"
+echo "3. Multiplication"
+echo "4. Dividing"
+read -r choice
+
+export TERM=xterm-256color
+clear
+
+case $choice in
+  1)result=$(($a+$b))
+  ;;
+  2)result=$(($a-$b))
+  ;;
+  3)result=$(($a*$b))
+  ;;
+  4)result=$(($a/$b))
+  ;;
+esac
+
+echo "Result = $result"
