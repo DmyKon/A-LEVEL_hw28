@@ -21,7 +21,7 @@ public class App {
             }
             if (input.trim().equals("help")) {
                 System.out.println("--------help--------");
-                System.out.println("Avaible functions:\n" +
+                System.out.println("Available functions:\n" +
                         "sin, cos, tan, sec, cosec, ctan, asin, acos, atan, sinh, cosh, tanh\n" +
                         "\nIf your value is in degrees, type 'deg' in the end\n" +
                         "e.g. 'sin 30 deg' 'cos(60) deg' 'tan 10,5' 'sec(40.25)'");
